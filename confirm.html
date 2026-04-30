@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Confirmed — NIS Prep</title>
+  <link rel="icon" href="assets/Logo no background updated.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <script>if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');</script>
+  <style>
+    :root {
+      --cream: #F4EFE6;
+      --blue: #3D6EDB;
+      --blue-light: #5B8CE8;
+      --ink: #1A1815;
+      --ink-mid: #4A463E;
+      --ink-soft: #8A8378;
+      --border: rgba(0,0,0,0.08);
+      --card-bg: #FBF8F1;
+    }
+    html.dark {
+      --cream: #111009;
+      --blue: #5B8CE8;
+      --blue-light: #7BA8F0;
+      --ink: #F0EAE0;
+      --ink-mid: #C0AE98;
+      --ink-soft: #7A6E62;
+      --border: rgba(255,255,255,0.08);
+      --card-bg: #1D1A16;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(61,110,219,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 28px;
+    }
+    .kicker {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 16px;
+      color: var(--ink-mid);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0 -40px 32px;
+    }
+    .footer-text {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--ink);
+      margin-bottom: 32px;
+    }
+    .brand img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+    html.dark .brand img { filter: invert(1); opacity: 0.6; }
+    .brand-name {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <a class="brand" href="https://coreexamlayups.com">
+      <img src="assets/Logo no background updated.png" alt="NIS Prep">
+      <span class="brand-name">NIS Prep</span>
+    </a>
+    <div class="icon">✓</div>
+    <div class="kicker">Account Verified</div>
+    <h1>Email confirmed!</h1>
+    <p>Your NIS Prep account is all set. Head back to the app to log in and get started.</p>
+    <div class="divider"></div>
+    <p class="footer-text">You can close this tab and return to the NIS Prep app on your device.</p>
+  </div>
+</body>
+</html>
