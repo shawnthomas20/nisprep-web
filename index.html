@@ -75,7 +75,7 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
 
     body {
       font-family: 'DM Sans', sans-serif;
@@ -524,6 +524,12 @@
       #pricing, #privacy, #contact { padding: 80px 24px; }
       #screenshots { padding: 80px 0 60px; }
       .screenshots-header { padding: 0 24px; }
+      /* Single phone on small screens — duo is too wide at 416px */
+      .phone-duo { justify-content: center; }
+      .phone-duo .phone-frame { width: 200px; }
+      .phone-duo .phone-frame:nth-child(2) { display: none; }
+      /* iPad frame must not exceed content width */
+      .ipad-frame { width: 100% !important; max-width: 320px; }
     }
   </style>
 </head>
