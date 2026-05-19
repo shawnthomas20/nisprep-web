@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS Prep — Core Exam Layups</title>
-  <meta name="description" content="Comprehensive question bank for the 2026 ABR Non-Interpretive Skills board exam. 300+ questions, tutor & timed modes, iPhone & iPad.">
-  <meta property="og:title" content="NIS Prep — Core Exam Layups">
-  <meta property="og:description" content="Don't miss the easy ones. Comprehensive preparation for the ABR NIS exam.">
+  <title>NIS+RISC Prep — Core Exam Layups</title>
+  <meta name="description" content="Comprehensive question bank for the 2026 ABR Non-Interpretive Skills board exam. 700+ questions covering NIS and Radioisotope Safety Content, tutor & timed modes, iPhone & iPad.">
+  <meta property="og:title" content="NIS+RISC Prep — Core Exam Layups">
+  <meta property="og:description" content="Don't miss the easy ones. Comprehensive preparation for the NIS and RISC sections of the ABR Core Exam.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://coreexamlayups.com">
   <meta property="og:image" content="https://coreexamlayups.com/assets/OG_image.png">
@@ -57,6 +57,9 @@
       --mobile-nav-bg: rgba(244,239,230,0.97);
       --select-option-bg: #FBF8F1;
       --nav-h: 64px;
+      --red: #C42B2B;
+      --red-soft: rgba(196,43,43,0.09);
+      --red-border: rgba(196,43,43,0.20);
     }
 
     html.dark {
@@ -86,6 +89,9 @@
       --watermark-opacity: 1;
       --mobile-nav-bg: rgba(17,16,9,0.97);
       --select-option-bg: #1D1A16;
+      --red: #E05555;
+      --red-soft: rgba(224,85,85,0.13);
+      --red-border: rgba(224,85,85,0.22);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -246,6 +252,28 @@
       transition: background 0.2s, transform 0.15s;
     }
     .btn-secondary:hover { background: var(--btn-secondary-hover); transform: translateY(-2px); }
+
+    /* ── RISC ANNOUNCEMENT ── */
+    .hero-announce {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: var(--red-soft); border: 1px solid var(--red-border);
+      border-radius: 100px; padding: 9px 20px;
+      font-size: 14px; color: var(--red); font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .hero-announce-badge {
+      background: var(--red); color: #fff;
+      font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 4px 10px; border-radius: 100px;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .accent-red { color: var(--red); }
+    .hero-risc-highlight { color: var(--red); font-weight: 600; }
+    .hero-price-note {
+      width: 100%; text-align: center;
+      font-size: 13px; color: var(--ink-soft);
+      margin-top: 4px;
+    }
 
     /* Phone frame */
     .phone-frame {
@@ -587,7 +615,7 @@
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="legal.html">Legal</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="https://apps.apple.com/us/app/nis-prep-abr-core-exam-qbank/id6764441298" class="nav-cta" target="_blank">Download</a></li>
+    <li><a href="https://apps.apple.com/us/app/nis-risc-prep/id6764441298" class="nav-cta" target="_blank">Download</a></li>
   </ul>
   <div class="nav-right">
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
@@ -612,7 +640,7 @@
     <li><a href="#pricing" onclick="closeMobileNav()" style="display:block; padding:12px 0; font-size:17px; font-weight:500; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--border);">Pricing</a></li>
     <li><a href="legal.html" onclick="closeMobileNav()" style="display:block; padding:12px 0; font-size:17px; font-weight:500; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--border);">Legal</a></li>
     <li><a href="#contact" onclick="closeMobileNav()" style="display:block; padding:12px 0; font-size:17px; font-weight:500; color:var(--ink-mid); text-decoration:none; border-bottom:1px solid var(--border);">Contact</a></li>
-    <li style="margin-top:16px;"><a href="https://apps.apple.com/us/app/nis-prep-abr-core-exam-qbank/id6764441298" class="btn-primary" style="justify-content:center;" target="_blank">Download on the App Store</a></li>
+    <li style="margin-top:16px;"><a href="https://apps.apple.com/us/app/nis-risc-prep/id6764441298" class="btn-primary" style="justify-content:center;" target="_blank">Download on the App Store</a></li>
   </ul>
 </div>
 
@@ -621,16 +649,21 @@
   <div class="hero-bg-grid"></div>
   <img src="assets/Logo no background updated.png" class="hero-watermark hero-watermark-left" alt="">
   <img src="assets/Logo no background updated.png" class="hero-watermark hero-watermark-right" alt="">
+  <div class="hero-announce fade-up">
+    <span class="hero-announce-badge">New</span>
+    380 new questions covering Radioisotope Safety Content — now included
+  </div>
   <div class="hero-eyebrow fade-up">Core Exam Layups</div>
-  <h1 class="fade-up delay-1">NIS&nbsp;<span class="accent">Prep</span></h1>
+  <h1 class="fade-up delay-1"><span class="accent">NIS</span>+<span class="accent-red">RISC</span>&nbsp;Prep</h1>
   <p class="hero-tagline fade-up delay-2">Don't miss the easy ones.</p>
-  <p class="hero-sub fade-up delay-2">Comprehensive preparation for the Non-Interpretive Skills section of the 2026 ABR Core Exam</p>
+  <p class="hero-sub fade-up delay-2">Comprehensive preparation for the Non-Interpretive Skills and <span class="hero-risc-highlight">Radioisotope Safety Content</span> sections of the 2026 ABR Core Exam</p>
   <div class="hero-actions fade-up delay-3">
-    <a href="https://apps.apple.com/us/app/nis-prep-abr-core-exam-qbank/id6764441298" class="btn-primary" target="_blank">
+    <a href="https://apps.apple.com/us/app/nis-risc-prep/id6764441298" class="btn-primary" target="_blank">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
       Download on the App Store
     </a>
     <a href="#features" class="btn-secondary">Explore features ↓</a>
+    <p class="hero-price-note">$4.99 · One-time purchase · <span style="color:var(--red); font-weight:500;">Limited-time pricing</span></p>
   </div>
   <div class="hero-phone fade-up delay-3">
     <div class="phone-frame">
@@ -646,7 +679,7 @@
 <!-- ── STATS ── -->
 <div class="stats-row">
   <div class="stat fade-up">
-    <div class="stat-num">300<span class="accent">+</span></div>
+    <div class="stat-num">700<span class="accent">+</span></div>
     <div class="stat-label">Practice Questions</div>
   </div>
   <div class="stat fade-up delay-1">
@@ -704,9 +737,9 @@
       <div class="feature-text">
         <div class="feature-label">Question Bank</div>
         <h2 class="feature-title">High-yield questions, detailed explanations</h2>
-        <p class="feature-body">Every question is written to reflect the style and content of the ABR Core Exam. Detailed explanations accompany each answer so you understand the reasoning, not just the result. Build confidence in the concepts that show up most on exam day.</p>
+        <p class="feature-body">Every question is written to reflect the content of the ABR Core Exam. Detailed explanations accompany each answer so you understand the reasoning, not just the result. Build confidence in the concepts that show up most on exam day.</p>
         <div class="feature-pills">
-          <span class="pill">300+ Board-style questions</span>
+          <span class="pill">700+ Board-style questions</span>
           <span class="pill">Detailed explanations</span>
           <span class="pill">High-yield topics</span>
           <span class="pill">ABR study guide aligned</span>
@@ -741,7 +774,7 @@
       <div class="feature-text">
         <div class="feature-label">Search</div>
         <h2 class="feature-title">Every question at your fingertips</h2>
-        <p class="feature-body">Instantly search all 300+ questions by keyword or topic. Looking for everything about gadolinium contrast agents? MR safety? Informed consent? Find it in seconds, filtered by attempt status.</p>
+        <p class="feature-body">Instantly search all 700+ questions by keyword or topic. Filter your search results based on NIS or RISC. Find any topic you need, in seconds.</p>
         <div class="feature-pills">
           <span class="pill">Full-text search</span>
           <span class="pill">Attempt status filter</span>
@@ -772,7 +805,6 @@
         <h2 class="feature-title">Know exactly where you stand</h2>
         <p class="feature-body">Your dashboard tracks every question attempted — correct, incorrect, and unused. Detailed session results break down your score chapter by chapter, so you know exactly where to focus before exam day.</p>
         <div class="feature-pills">
-          <span class="pill">Progress ring</span>
           <span class="pill">Chapter breakdowns</span>
           <span class="pill">Session history</span>
           <span class="pill">Question review</span>
@@ -807,10 +839,8 @@
       <div class="feature-text">
         <div class="feature-label">Cross-Device</div>
         <h2 class="feature-title">iPhone and iPad, beautifully</h2>
-        <p class="feature-body">NIS Prep runs natively on both iPhone and iPad, adapting its layout to make the most of every screen size. Study on your iPhone on the go, then switch to your iPad at the desk. Your progress syncs seamlessly.</p>
+        <p class="feature-body">NIS+RISC Prep runs natively on both iPhone and iPad, adapting its layout to make the most of every screen size. Study on your iPhone on the go, then switch to your iPad at the desk. Your progress syncs seamlessly.</p>
         <div class="feature-pills">
-          <span class="pill">iPhone</span>
-          <span class="pill">iPad</span>
           <span class="pill">Synced progress</span>
           <span class="pill">Adaptive layout</span>
         </div>
@@ -865,7 +895,7 @@
     <p class="pricing-institutional">
       <strong>Institutional pricing available.</strong> Training programs, residencies, and group purchases — <a href="#contact">get in touch</a> for details.
     </p>
-    <a href="https://apps.apple.com/us/app/nis-prep-abr-core-exam-qbank/id6764441298" class="btn-full" target="_blank">
+    <a href="https://apps.apple.com/us/app/nis-risc-prep/id6764441298" class="btn-full" target="_blank">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
       Download on the App Store
     </a>
