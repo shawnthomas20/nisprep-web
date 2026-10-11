@@ -1109,7 +1109,7 @@
     track.appendChild(clone);
 
     const LOOP_SECONDS = 150;   // time for one full pass of all logos
-    const RESUME_DELAY = 1000;  // ms of no interaction before auto-scroll resumes
+    const RESUME_DELAY = 250;   // ms of no interaction before auto-scroll resumes
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let pos = 0, last = null, userUntil = 0, drag = null;
 
